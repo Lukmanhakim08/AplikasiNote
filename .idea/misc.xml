@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/KULIAH/Binar/Materi/Chapter 8/AplikasiNote/app/src/main/res/drawable/custom.xml" value="0.1" />
         <entry key="..\:/KULIAH/Binar/Materi/Chapter 8/AplikasiNote/app/src/main/res/drawable/ic_add.xml" value="0.1" />
+        <entry key="..\:/KULIAH/Binar/Materi/Chapter 8/AplikasiNote/app/src/main/res/layout/activity_login.xml" value="0.1796875" />
         <entry key="..\:/KULIAH/Binar/Materi/Chapter 8/AplikasiNote/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/KULIAH/Binar/Materi/Chapter 8/AplikasiNote/app/src/main/res/layout/activity_register.xml" value="0.1796875" />
         <entry key="..\:/KULIAH/Binar/Materi/Chapter 8/AplikasiNote/app/src/main/res/layout/activity_tambah_note.xml" value="0.1" />
         <entry key="..\:/KULIAH/Binar/Materi/Chapter 8/AplikasiNote/app/src/main/res/layout/item_logbook.xml" value="0.1" />
         <entry key="..\:/KULIAH/Binar/Materi/Chapter 8/AplikasiNote/app/src/main/res/layout/item_note.xml" value="0.1" />

@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Aplikasi Note</string>
+    <string name="masukkan_alamat">Masukkan Alamat</string>
+    <string name="masukkan_nama_lengap">Masukkan Nama Lengap</string>
+    <string name="register">Register</string>
+    <string name="masukkan_username">Masukkan Username</string>
+    <string name="masukkan_password">Masukkan Password</string>
+    <string name="masukkan_konfirmasi_password">Masukkan Konfirmasi Password</string>
+    <string name="btnregister">REGISTER</string>
+    <string name="sudah_punya_akun">sudah Punya Akun</string>
 </resources>
