@@ -1,10 +1,11 @@
-package com.chapter8.aplikasinote
+package com.chapter8.aplikasinote.view.activty
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.chapter8.aplikasinote.roomdatabase.User
+import com.chapter8.aplikasinote.R
+import com.chapter8.aplikasinote.data.dataclass.User
 import com.chapter8.aplikasinote.roomdatabase.UserDatabase
 import kotlinx.android.synthetic.main.activity_register.*
 import kotlinx.coroutines.GlobalScope
@@ -27,19 +28,25 @@ class RegisterActivity : AppCompatActivity() {
                 val alamat = edt_alamat.text.toString()
                 val username = edt_username.text.toString()
                 val password = edt_password.text.toString()
+                val konpassw = edt_konpassword.text.toString()
 
                 val simpan = dbUser?.userDao()?.register(User(null, nama, alamat, username, password))
                 runOnUiThread {
                     if (nama.isNotEmpty() &&
                         alamat.isNotEmpty() &&
                         username.isNotEmpty() &&
-                        password.isNotEmpty()
+                        password.isNotEmpty() &&
+                        konpassw.isNotEmpty()
                     ){
-                        if (simpan !=0.toLong()){
-                            startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
-                            Toast.makeText(this@RegisterActivity, "Register sukse", Toast.LENGTH_SHORT).show()
-                        }else{
-                            Toast.makeText(this@RegisterActivity, "Register gagal", Toast.LENGTH_SHORT).show()
+                        if (password == konpassw){
+                            if (simpan !=0.toLong()){
+                                startActivity(Intent(this@RegisterActivity, LoginActivity::class.java))
+                                Toast.makeText(this@RegisterActivity, "Register sukse", Toast.LENGTH_SHORT).show()
+                            }else{
+                                Toast.makeText(this@RegisterActivity, "Register gagal", Toast.LENGTH_SHORT).show()
+                            }
+                        } else{
+                            Toast.makeText(this@RegisterActivity, "Password dan konfirmasi password harus sama", Toast.LENGTH_SHORT).show()
                         }
                     }else{
                         Toast.makeText(this@RegisterActivity, "Semua field harus diisi", Toast.LENGTH_SHORT).show()
